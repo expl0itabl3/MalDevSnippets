@@ -1,0 +1,9 @@
+# Ignore Visual Studio files
+.vs/
+
+# Ignore user-specific files
+*.user
+*.suo
+
+# Ignore Mac-specific files
+.DS_Store
