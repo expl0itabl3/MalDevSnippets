@@ -10,6 +10,5 @@ Process Argument Spoofing involves initiating a benign, suspended process and mo
 4. Overwrite ProcessParameters.CommandLine.Buffer string with the payload to execute.
 5. Resume the process.
 
-Note that overwriting payloads using PEB->ProcessParameters.CommandLine.Buffer can be detected by tools like Process Hacker and Process Explorer. These tools employ NtQueryInformationProcess to read runtime process command line arguments.
-
-However, you can trick these tools by adjusting CommandLine.Length to be less than the buffer size in the remote process. This strategy limits the accessible buffer segment for external tools, effectively hiding the payload.
+Note that overwriting payloads using PEB->ProcessParameters.CommandLine.Buffer can be detected by tools like Process Hacker and 
+Process Explorer. These tools employ NtQueryInformationProcess to read runtime process command line arguments. However, you can trick these tools by adjusting CommandLine.Length to be less than the buffer size in the remote process. This strategy limits the accessible buffer segment for external tools, effectively hiding the payload.
