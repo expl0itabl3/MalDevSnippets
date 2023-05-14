@@ -1,4 +1,4 @@
-# PPID spoofing
+# PPID Spoofing
 
 This example draws inspiration from [MaldevAcademy](https://maldevacademy.com/).
 
