@@ -1,6 +1,6 @@
 # Detecting Hooked Syscalls
 
-This code is based on the "Detecting Hooked Syscalls" post by [ired.team](https://www.ired.team/offensive-security/defense-evasion/detecting-hooked-syscall-functions).
+This code is based on the [Detecting Hooked Syscalls](https://www.ired.team/offensive-security/defense-evasion/detecting-hooked-syscall-functions) post by ired.team.
 
 The system calls (syscalls) or functions that are often the victims of API hooking usually commence with the prefixes `Nt` or `Zw`. In their unhooked state, these functions begin with the opcode sequence  `4c 8b d1 b8`.
 
