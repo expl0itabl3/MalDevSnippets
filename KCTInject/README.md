@@ -1,6 +1,6 @@
 # KCT Injection
 
-This code is based on the KernelCallbackTable-Injection project by capt-meelo. Source code available at: https://github.com/capt-meelo/KernelCallbackTable-Injection
+This code is based on the [KernelCallbackTable-Injection](https://github.com/capt-meelo/KernelCallbackTable-Injection) project by capt-meelo.
 
 This example injects a payload into a sacrificial process (notepad.exe) by modifying the Kernel Callback Table (KCT) of the process. The following steps outline the procedure for executing this technique:
 1. Create a hidden notepad.exe process.
