@@ -2,6 +2,11 @@
 #include <windows.h>
 #include <psapi.h>
 
+/*
+ * This code is based on the "Full DLL Unhooking with C++" post by ired.team
+ * Source code available at: https://www.ired.team/offensive-security/defense-evasion/how-to-unhook-a-dll-using-c++
+*/
+
 int main()
 {
     // Get the handle to the current process
